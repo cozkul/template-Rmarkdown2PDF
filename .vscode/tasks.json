@@ -6,7 +6,7 @@
         {
             "label": "Run Tests",
             "type": "shell",
-            "command": "./scripts/run",
+            "command": "./scripts/run.sh",
             "args": ["${relativeFile}"],
             "problemMatcher": [],
             "group": {
