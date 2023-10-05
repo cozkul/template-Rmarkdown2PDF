@@ -11,7 +11,7 @@ cd $build_dir
 tex_file="${remove_ext}.tex"
 pdf_file="${remove_ext}.pdf"
 md_file_ib="${remove_ext}.md"
-pandoc --pdf-engine=xelatex --number-sections --standalone --toc -t latex -o $tex_file $md_file_ib
+pandoc --pdf-engine=xelatex --standalone -t latex -o $tex_file $md_file_ib
 pdflatex -output-directory=. -output-format=pdf $tex_file
 open $pdf_file
 cd ..
