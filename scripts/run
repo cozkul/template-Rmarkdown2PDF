@@ -1,7 +1,7 @@
 echo "Building: pdf from Rmd $1"
 filename=$(basename "$1")
 remove_ext="${filename%.*}"
-build_dir="./${remove_ext}_build"
+build_dir="./build_${remove_ext}"
 md_file="${build_dir}/${remove_ext}.md"
 pdf_file="${build_dir}/${remove_ext}.pdf"
 rm -rf $build_dir
